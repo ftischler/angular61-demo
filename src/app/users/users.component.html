@@ -1,4 +1,9 @@
-<h2 id="users">Users</h2>
-<app-users-table></app-users-table>
-<h2 id="groups">Groups</h2>
-<app-groups-table></app-groups-table>
+<a [routerLink]="['/users']" fragment="user-table">Users</a> | <a [routerLink]="['/users']" fragment="group-table">Groups</a>
+<h2>Users</h2>
+<div id="user-table">
+  <app-users-table></app-users-table>
+</div>
+<h2>Groups</h2>
+<div id="group-table">
+  <app-groups-table></app-groups-table>
+</div>
