@@ -17,6 +17,5 @@ export class MainNavComponent {
   public menuItems: ReadonlyMap<NavigationItemType, MainMenuPath[]> = mainMenuItems;
 
 
-  constructor(private breakpointObserver: BreakpointObserver) {
-  }
+  constructor(private breakpointObserver: BreakpointObserver) { }
 }

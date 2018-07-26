@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" fullscreen>
   <mat-sidenav
     #drawer
     class="sidenav"
@@ -12,7 +12,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" style="z-index: 999;">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -21,7 +21,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>angular61-demo</span>
+      <span>Angular 6.1 Demo</span>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
